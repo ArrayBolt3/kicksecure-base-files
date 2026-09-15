@@ -1,3 +1,46 @@
+commit 6b4fa7eeb3bb746ffd3fd555ebc943adf3f47d1f
+Merge: 2c41a55 ed39f5f
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Sep 14 02:24:17 2026 -0400
+
+    Merge remote-tracking branch 'refs/remotes/ArrayBolt3/arraybolt3/trixie'
+
+commit ed39f5f5a8d43090c0e942cc4840b194abfcb689
+Author: Aaron Rainbolt <arraybolt3@gmail.com>
+Date:   Sun Sep 13 10:56:13 2026 -0400
+
+    comments
+
+commit 09e72e358e5a0ca8e29556307a21daa7abcb2db3
+Merge: 2c41a55 bc020e9
+Author: Aaron Rainbolt <arraybolt3@gmail.com>
+Date:   Sun Sep 13 10:52:40 2026 -0400
+
+    Merge branch 'ai' into arraybolt3/trixie
+
+commit bc020e9aea2223cab8497255560f7d0e70b71798
+Merge: 5e65957 2c41a55
+Author: claude <noreply@anthropic.com>
+Date:   Tue Sep 8 13:10:17 2026 -0400
+
+    Merge branch 'master' into ai
+
+commit 2c41a55e6b80faf572eaf555453dec0a2ab0d3c9
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Sep 8 15:28:41 2026 +0000
+
+    bumped changelog version
+
+commit 5e65957440021d2c9b7cf534ddbb65684b14ef0c
+Author: claude (dev466 03fddc83-eb06-452c-9154-010371b63889) <noreply@anthropic.com>
+Date:   Mon Sep 7 04:00:55 2026 -0400
+
+    grub: force 4x3/BIOS theme via dist_build_grub_bios_theme
+
+    - grub-mkconfig runs in the build chroot; the firmware probe reads the
+      BUILD HOST, making images non-reproducible. The build env var forces 4x3.
+    - Absent at runtime, so an installed system still probes its own firmware.
+
 commit 84acc5766d25ee9d1711514ad2c6d557c8993b23
 Merge: 5a57f5d 0b644d9
 Author: Patrick Schleizer <adrelanos@whonix.org>
